@@ -1,0 +1,36 @@
+{
+    "name": "jminayat/laravel-menu",
+    "description": "Menu management for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier Minaya Trinidad",
+            "email": "javiermt05@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JMinayaT\\Menus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JMinayaT\\Menus\\Tests\\": "Tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JMinayaT\\Menus\\MenusServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "JMinayaT\\Menus\\Facades\\Menu"
+            }
+        }
+    }
+}
