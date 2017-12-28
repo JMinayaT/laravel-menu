@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites>
-  <testsuite name="JMinayaT\Menus\Tests\MenuTest" file="C:\proyectos\laravel-menu\Tests\MenuTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.132093">
-    <testcase name="testMenuSuma" class="JMinayaT\Menus\Tests\MenuTest" classname="JMinayaT.Menus.Tests.MenuTest" file="C:\proyectos\laravel-menu\Tests\MenuTest.php" line="12" assertions="2" time="0.132093"/>
-  </testsuite>
-</testsuites>
