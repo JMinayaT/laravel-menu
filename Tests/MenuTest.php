@@ -1,17 +1,24 @@
 <?php
 namespace JMinayaT\Menus\Tests;
 
-use JMinayaT\Menus\MenuService;
+use Menu;
+use JMinayaT\Menus\Builder;
 
 class MenuTest extends TestCase
 {
-     /**
-     * Check that the suma method returns correct result
-     * @return void
-     */
-    public function testMenuSuma()
+    
+    public function test_create_empty_menu()
     {
-        $this->assertSame(MenuService::suma(1, 8), 9);
-        $this->assertSame(MenuService::suma(2, 8), 10);
+        Menu::create('test',function($menu){
+        });
+        $expected = '<ul class="list-unstyled components"></ul>';
+        $this->assertEquals($expected,Menu::get('test'));
+    }
+
+    public function test_get_menu_intance_of_builder()
+    {
+        Menu::create('test',function($menu){
+        });
+        $this->assertInstanceOf(Builder::class, Menu::instance('test'));
     }
 }

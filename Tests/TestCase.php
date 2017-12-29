@@ -26,7 +26,7 @@ class TestCase extends OrchestraTestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Menus' => MenuFacade::class,
+            'Menu' => MenuFacade::class,
         ];
     }
 }
