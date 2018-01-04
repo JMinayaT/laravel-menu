@@ -196,3 +196,7 @@ Enable or disable menu item ordering for all menus.
 
 ### orderBy
 Set the default order type in alphabet or number.
+
+
+## License
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
