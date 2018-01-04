@@ -60,7 +60,7 @@ class MenuService
      */
     public function show($name)
     {
-        return $this-get($name);
+        return $this->get($name);
     }
 
     /**

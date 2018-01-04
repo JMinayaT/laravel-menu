@@ -246,7 +246,11 @@ class Item implements Arrayable
      */
     public function getUrlRequest()
     {
-        return ltrim(str_replace(url('/'), '', $this->getUrl()), '/');
+        $urlRequest = ltrim(str_replace(url('/'), '', $this->getUrl()), '/');
+        if($urlRequest ==""){
+            $urlRequest ="/";
+        }
+        return $urlRequest;
     }
 
     /**
