@@ -29,4 +29,21 @@ class TestCase extends OrchestraTestCase
             'Menu' => MenuFacade::class,
         ];
     }
+
+     /**
+     * Set up the environment.
+     *
+     * @param \Illuminate\Foundation\Application $app
+     */
+    protected function getEnvironmentSetUp($app)
+    {
+        $app['config']->set('menus', [
+            'aspect' => [
+                'MtsysAdmin'  => 'JMinayaT\Menus\Aspects\MtsysAdmin\SidebarMenuAspect',
+            ],
+            'default_aspect' => 'MtsysAdmin',
+            'ordered'   =>    true,
+            'orderBy'   =>    'title',
+        ]);
+    }
 }
